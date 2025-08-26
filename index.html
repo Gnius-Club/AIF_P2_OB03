@@ -1,24 +1,242 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 3: ¡Entrenando los Sentidos de la IA!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3: ¡Entrenando los Sentidos de la IA!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Aprender a activar "superpoderes" de IA en Pictoblox (añadir una Extensión).</li>
+                                        <li>Comprender que la cámara de la computadora puede actuar como un sensor (los "ojos" de la IA).</li>
+                                        <li>Aplicar la lógica condicional "SI... ENTONCES..." utilizando bloques de código reales.</li>
+                                        <li>Crear un programa interactivo que reaccione a la presencia de una persona en el mundo real.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡¡El Despertar de los Sentidos!:</strong> Calentamiento y Conexión.</li>
+                                        <li><strong class="tactic-highlight">⚡La Bóveda Secreta de Superpoderes:</strong> Añadiendo Extensiones de IA.</li>
+                                        <li><strong class="tactic-highlight">⚡Creando al ¡Panda Guardián!:</strong> Brain Spark - Construcción del Proyecto.</li>
+                                        <li><strong class="tactic-highlight">⚡Galería de Guardianes:</strong> Gnius Storm - Compartiendo Creaciones.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa funcional del "Panda Guardián" en Pictoblox. El sprite Tobi debe reaccionar (diciendo una frase o cambiando de disfraz) cuando la cámara del dispositivo detecta a una persona.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Computadoras o tablets con cámaras funcionales (1 por alumno o por pareja).</li>
+                                        <li>Acceso a Pictoblox.io.</li>
+                                        <li>Presentación de diapositivas con imágenes de los bloques a utilizar.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li>Verificar que las cámaras de todos los dispositivos funcionen y que Pictoblox tenga permiso para usarlas (esto es crucial y puede requerir una prueba previa).</li>
+                                        <li>Tener el proyecto final del "Panda Guardián" ya creado para poder mostrarlo como ejemplo si es necesario.</li>
+                                        <li>Asegurarse de que el proyector muestre la pantalla del facilitador con claridad.</li>
+                                        <li>Familiarizarse con los diálogos para mantener el flujo de una historia emocionante sobre "darle sentidos" a la IA.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: ¡El Despertar de los Sentidos! ⏰ 5 minutos</h2>
+                <p>Reconectar con la sesión anterior (unplugged) y establecer la misión de hoy: transferir los "poderes" que ellos usaron a su personaje en Pictoblox.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión y Presentación de la Misión ⏰ 5 minutos</h3>
+                            <p>(Acción): El facilitador da la bienvenida y proyecta una diapositiva con una imagen grande del bloque "si... entonces..." junto a una foto de niños jugando al "Semáforo Lógico".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, súper agentes de IA, bienvenidos a su tercera misión! ¿Quién recuerda nuestro juego del 'Semáforo Lógico'? ¡Exacto! Pusimos a prueba nuestro súper cerebro con las palabras mágicas... ¿cuáles eran? ¡<strong>SI</strong> y <strong>ENTONCES</strong>! Ustedes usaron sus ojos para ver la tarjeta de color (el evento) y su cuerpo para reaccionar (la acción). ¡Fueron computadoras humanas perfectas!</p>
+                                <p class="dialogue assistant">Pues hoy, nuestra misión es darle esos mismos superpoderes a nuestro amigo Tobi, el panda. Ya no seremos nosotros las computadoras, ¡vamos a programar una de verdad! Le vamos a dar el sentido de la vista, para que pueda vernos, y le enseñaremos las reglas 'SI... ENTONCES...' para que sepa qué hacer cuando nos vea. Al final de la sesión de hoy, todos podrán decir: <strong>'Yo puedo darle el súper poder de 'ver' a mi personaje en Pictoblox y programarlo para que reaccione cuando me detecte'</strong>. ¿Están listos para darle ojos a nuestra IA?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: La Bóveda Secreta de Superpoderes ⏰ 10 minutos</h2>
+                <p>Enseñar a los estudiantes el paso técnico de añadir una extensión de IA, enmarcándolo como un acto emocionante de "desbloquear poderes".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Encontrando la Puerta Secreta ⏰ 5 minutos</h3>
+                            <p>(Acción): Guiar a todos los estudiantes para que abran Pictoblox y localicen el botón de "Extensiones".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, agentes. Abran su laboratorio digital, Pictoblox. ¿Recuerdan que la última vez les mostré una puerta secreta? Una bóveda llena de superpoderes... ¿Quién recuerda dónde estaba? ¡Exacto! Abajo a la izquierda, ese botón azul brillante. Hoy, vamos a abrir esa bóveda porque necesitamos un poder muy especial: el poder de la Visión por Computadora. A la cuenta de tres, hagan clic en el botón azul para entrar a la bóveda... Uno... dos... ¡TRES!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Eligiendo el Poder de la Visión ⏰ 5 minutos</h3>
+                            <p>(Acción): Guiar a los estudiantes para que seleccionen y añadan la extensión "Object Detection".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Woooow! Miren todos esos superpoderes. Cada uno le enseña a Tobi algo nuevo. Hay uno para hablar, otro para sentir... ¡pero el que necesitamos hoy es el que le da ojos! Busquen la tarjeta que se llama <strong>'Object Detection'</strong>, que significa 'Detección de Objetos'. Es como darle a Tobi unos lentes mágicos que le permiten reconocer cosas del mundo real. ¿La encontraron? ¡Hagan clic en ella!</p>
+                                <p class="dialogue assistant">(Esperar a que se cargue la extensión).</p>
+                                <p class="dialogue assistant">¡Atención, miren su paleta de bloques de la izquierda! ¿Ven que ha aparecido una nueva categoría de bloques de color azul oscuro? ¡Esos son sus nuevos ingredientes mágicos! ¡Acaban de desbloquear el poder de la visión para Tobi! ¡Felicidades, agentes! Ahora que Tobi tiene ojos... vamos a enseñarle a usarlos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: Creando al ¡Panda Guardián! (Brain Spark) ⏰ 20 minutos</h2>
+                <p>Aplicar los conceptos de evento y condicional para construir un programa funcional y divertido. Esta es la actividad central.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Misión del Panda Guardián ⏰ 2 minutos</h3>
+                            <p>(Acción): Presentar el objetivo del proyecto de una forma narrativa y atractiva.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Agentes, su misión de construcción es crear un 'Panda Guardián'. Tobi tiene un tesoro muy importante que proteger (¡su bambú!). Su trabajo como guardián es vigilar. Queremos programarlo para que, <strong>SI</strong> ve a una persona acercándose, <strong>ENTONCES</strong> diga '¡Alto ahí, amigo!' para avisar que está de guardia. ¿Creen que puedan programar al guardián más atento de todos?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Tobi, ¡Abre los Ojos! (Preparando la Vista) ⏰ 8 minutos</h3>
+                            <p>(Acción): Guiar a los estudiantes para que arrastren y configuren los bloques necesarios para activar la cámara y el análisis continuo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Primero, nuestro guardián necesita estar siempre alerta. ¿Qué bloque usamos para que algo se repita una y otra y otra vez? ¡Exacto, el bucle <strong>'por siempre'</strong> de los bloques naranjas de 'Control'! Arrástrenlo al centro.</p>
+                                <p class="dialogue assistant">Ahora, dentro de ese bucle, Tobi tiene que hacer dos cosas para poder ver. Primero, ¡tiene que encender su cámara! Vayan a nuestros nuevos bloques azules oscuros de 'Object Detection' y busquen el que dice <strong>'encender video'</strong>. Arrástrenlo dentro del 'por siempre'. ¡Perfecto!</p>
+                                <p class="dialogue assistant">Pero no es suficiente con encender la cámara. Tobi tiene que pensar en lo que ve. Justo debajo del bloque de 'encender video', coloquen el que dice <strong>'analizar imagen de cámara'</strong>. Esto es como decirle a Tobi: '¡Abre los ojos, y ahora pon atención a lo que estás viendo!'. Asegúrense de que ambos bloques estén dentro del gran bloque 'por siempre'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: La Regla Mágica del Guardián ⏰ 10 minutos</h3>
+                            <p>(Acción): Guiar a los estudiantes para que construyan la lógica condicional, conectando explícitamente con el juego de la sesión anterior.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡El sistema de vigilancia de Tobi está activado! Ahora viene la parte más importante: la regla, la decisión. ¿Recuerdan las palabras mágicas? <strong>'SI... ENTONCES...'</strong>. Vayan a los bloques naranjas de 'Control' y saquen el gran bloque <strong>'si... entonces'</strong>. ¡Pónganlo dentro del 'por siempre', justo debajo de los otros dos bloques!</p>
+                                 <p class="dialogue assistant">Ahora, ¿cuál es la condición? ¿Qué tiene que pasar para que Tobi reaccione? ¡Tiene que ver a una persona! Vayan a los bloques de IA, los azules oscuros, y busquen el bloque con forma de diamante que pregunta <strong>'¿se detecta [person]?'</strong>. ¡Esa es nuestra condición! Arrástrenla y colóquenla en el espacio con forma de diamante de su bloque 'si'.</p>
+                                 <p class="dialogue assistant">¡Miren qué bien encaja! ¡Ahora nuestro programa dice: <strong>SI</strong> se detecta una persona...! ¿Qué nos falta? ¡La acción! ¿Qué debe hacer Tobi <strong>ENTONCES</strong>? ¡Decir 'Alto ahí, amigo!'. Vayan a los bloques morados de 'Apariencia', tomen el bloque <strong>'decir Hola!'</strong> y pónganlo ¡DENTRO de la boca del bloque 'si'! Cambien el texto a <strong>'¡Alto ahí, amigo!'</strong></p>
+                                 <p class="dialogue assistant">(Pasearse por el salón para asegurarse de que todos los estudiantes tengan la estructura correcta).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Galería de Guardianes (Gnius Storm) ⏰ 5 minutos</h2>
+                <p>Permitir que los estudiantes prueben su creación, celebren su éxito y compartan su experiencia, reforzando el aprendizaje.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: ¡El Momento de la Verdad! ⏰ 5 minutos</h3>
+                            <p>(Acción): Dar la señal para que todos prueben sus programas. El facilitador anima y celebra en voz alta los éxitos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Agentes, ¡el momento ha llegado! Han programado a su Panda Guardián. Es hora de probar si su entrenamiento funcionó. Asegúrense de que su cara se vea en la cámara. Hagan clic en la <strong>bandera verde</strong> para activar a su guardián... ¡y ahora muévanse un poco frente a la cámara!</p>
+                                <p class="dialogue assistant">(Pausa para que los niños experimenten. Se escucharán exclamaciones de sorpresa y alegría).</p>
+                                <p class="dialogue assistant">¡ESTÁ FUNCIONANDO! ¡Escucho a muchos guardianes haciendo su trabajo! ¡Increíble! Han logrado que Tobi reaccione al mundo real. ¡Le han dado el sentido de la vista!</p>
+                                <p class="dialogue assistant">Ahora, rápidamente, muéstrenle a su compañero de al lado cómo funciona su Panda Guardián. Díganle: 'Mira, SI me ve, ENTONCES dice...'. ¡Compartan su magia!</p>
+                                <p class="dialogue assistant">(Tras un minuto de compartir en parejas, el facilitador cierra la sesión).</p>
+                                <p class="dialogue assistant">¡Estoy sin palabras, agentes! Hoy no solo jugaron a ser computadoras, ¡programaron una! Le dieron ojos a Tobi y le enseñaron su primera regla inteligente. Esto es solo el comienzo. Imaginen todo lo que podremos hacer cuando le enseñemos a reconocer objetos, a escuchar nuestra voz y mucho más. ¡Felicidades por una misión exitosa! Nos vemos en el próximo entrenamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
